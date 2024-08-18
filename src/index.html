@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MitsosTravel - Ο Κόσμος σας Περιμένει</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav
+      class="fixed top-0 z-20 w-full border-b start-0 bg-green-950 border-green-900"
+    >
+      <div
+        class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
+      >
+        <a class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+            >MitsosTravel</span
+          >
+        </a>
+        <div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+          <a href="./contact/index.html">
+            <button
+              type="button"
+              class="px-4 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-sm focus:ring-4 focus:outline-none focus:ring-green-300"
+            >
+              Επικοινωνία
+            </button>
+          </a>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 font-medium border rounded-lg md:p-0 md:space-x-8 md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-3 py-2 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 md:dark:text-green-500"
+                aria-current="page"
+                >Αρχική</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about/index.html"
+                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Σχετικά Με Εμάς</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="./contact/index.html"
+                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Επικοινωνία</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="size-32"></div>
+
+    <!-- Hero Section -->
+    <header
+      class="p-5 gap-4 md:px-20 flex items-center justify-center flex-col"
+    >
+      <h2
+        class="max-w-2xl text-gray-800 font-bold text-xl sm:text-6xl text-center"
+      >
+        Ανακαλύψτε τον Κόσμο με το
+        <span
+          class="tracking-tight inline font-semibold text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-tr from-blue-400 via-green-600 to-green-800 sm:text-7xl"
+          >MitsosTravel</span
+        >
+      </h2>
+
+      <p class="max-w-md mt-4 text-gray-600 text-center">
+        Εμπνευστείτε από τις κορυφαίες ταξιδιωτικές μας προσφορές και ξεκινήστε
+        την περιπέτειά σας με τους καλύτερους συνεργάτες στον χώρο των ταξιδιών.
+      </p>
+    </header>
+
+    <div class="size-10"></div>
+
+    <!-- Featured Destinations Section -->
+    <div class="grid p-5 gap-4 md:p-20 md:pt-5">
+      <div>
+        <img
+          class="object-cover w-full h-full"
+          src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        />
+      </div>
+      <div class="grid grid-cols-4 gap-4">
+        <div>
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </div>
+        <div>
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/1020016/pexels-photo-1020016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </div>
+        <div>
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </div>
+        <div>
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/2659475/pexels-photo-2659475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <span class="flex items-center">
+      <span class="flex-1 h-px bg-gray-700"></span>
+      <span class="px-6 shrink-0">Ταξιδιωτικοί Προορισμοί</span>
+      <span class="flex-1 h-px bg-gray-700"></span>
+    </span>
+
+    <!-- Article Section -->
+    <article class="prose prose-lg mx-auto p-5 md:p-20">
+      <h2 class="text-gray-800">Γιατί να Επιλέξετε το MitsosTravel</h2>
+      <p>
+        Το MitsosTravel είναι η ιδανική επιλογή για όλους όσοι επιθυμούν να
+        ταξιδέψουν με σιγουριά και άνεση. Από το 2010, προσφέρουμε
+        εξατομικευμένα πακέτα διακοπών που καλύπτουν τις ανάγκες κάθε ταξιδιώτη.
+        Η εμπειρία μας και οι συνεργασίες μας με τους κορυφαίους παρόχους
+        υπηρεσιών στον χώρο των ταξιδιών, μας καθιστούν την πρώτη επιλογή για
+        χιλιάδες πελάτες κάθε χρόνο.
+      </p>
+
+      <h3>Οι Υπηρεσίες μας</h3>
+      <p>
+        Το MitsosTravel προσφέρει μια σειρά από υπηρεσίες που καλύπτουν όλες τις
+        ταξιδιωτικές σας ανάγκες:
+      </p>
+      <ul>
+        <li>Κρατήσεις αεροπορικών εισιτηρίων</li>
+        <li>Ξενοδοχειακά πακέτα σε όλο τον κόσμο</li>
+        <li>Οργανωμένες εκδρομές και περιηγήσεις</li>
+        <li>Ενοικιάσεις αυτοκινήτων και μεταφορές</li>
+      </ul>
+
+      <h3>Η Ομάδα μας</h3>
+      <p>
+        Η ομάδα του MitsosTravel αποτελείται από έμπειρους επαγγελματίες με
+        πάθος για τα ταξίδια. Είμαστε εδώ για να σας βοηθήσουμε να σχεδιάσετε
+        τις διακοπές των ονείρων σας, παρέχοντας υποστήριξη σε κάθε βήμα της
+        διαδικασίας.
+      </p>
+
+      <blockquote class="border-l-4 border-green-600 pl-4">
+        "Η αποστολή μας είναι να δημιουργήσουμε αξέχαστες ταξιδιωτικές εμπειρίες
+        που θα θυμάστε για μια ζωή."
+      </blockquote>
+
+      <h3>Γιατί να Ταξιδέψετε Μαζί μας</h3>
+      <p>
+        Το MitsosTravel ξεχωρίζει για την προσωπική του προσέγγιση και την
+        αφοσίωση στους πελάτες του. Είμαστε εδώ για να εξασφαλίσουμε ότι κάθε
+        ταξίδι θα είναι μοναδικό, προσφέροντας εξατομικευμένες προτάσεις που
+        ανταποκρίνονται στις ανάγκες σας. Από την πρώτη επαφή μέχρι την
+        επιστροφή σας, η ομάδα μας είναι δίπλα σας για να διασφαλίσει ότι η
+        εμπειρία σας θα είναι απρόσκοπτη και ευχάριστη.
+      </p>
+
+      <h3>Προορισμοί για Όλους</h3>
+      <p>
+        Είτε αναζητάτε μια ρομαντική απόδραση είτε ένα περιπετειώδες ταξίδι, το
+        MitsosTravel έχει τον ιδανικό προορισμό για εσάς. Ανακαλύψτε νέες
+        κουλτούρες, γευτείτε τοπικές γεύσεις και ζήστε στιγμές που θα μείνουν
+        για πάντα χαραγμένες στη μνήμη σας.
+      </p>
+    </article>
+
+    <!-- Divider -->
+    <span class="flex items-center">
+      <span class="flex-1 h-px bg-gray-700"></span>
+      <span class="px-6 shrink-0">Τοποθεσίες</span>
+      <span class="flex-1 h-px bg-gray-700"></span>
+    </span>
+
+    <div class="size-10"></div>
+
+    <!-- Additional Featured Destinations Section -->
+    <div class="grid p-5 gap-4 md:p-20 md:pt-5">
+      <a href="./places/place1.html">
+        <img
+          class="object-cover w-full h-full"
+          src="https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        />
+      </a>
+      <div class="grid grid-cols-4 gap-4">
+        <a href="./places/place2.html">
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </a>
+        <a href="./places/place3.html">
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/3253492/pexels-photo-3253492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </a>
+        <a href="./places/place4.html">
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </a>
+        <a href="./places/place5.html">
+          <img
+            class="object-cover max-w-full h-full"
+            src="https://images.pexels.com/photos/2163038/pexels-photo-2163038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
