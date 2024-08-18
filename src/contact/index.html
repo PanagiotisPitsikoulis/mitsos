@@ -3,95 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TheCarSite - Επικοινωνήστε μαζί μας</title>
+    <title>MitsosTravel - Επικοινωνήστε μαζί μας</title>
     <link rel="stylesheet" href="../output.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-blue-600 text-white py-12">
+    <header class="bg-black text-white py-12">
       <div class="container mx-auto text-center">
         <!-- Back button -->
-        <a
-          href="../index.html"
-          class="inline-block px-12 py-3 text-sm font-medium text-white transition bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400 underline"
-        >
+        <a href="../index.html" class="text-white underline">
           Πίσω στην αρχική
         </a>
-        <h1 class="text-4xl font-extrabold mt-4">Επικοινωνήστε μαζί μας</h1>
+        <h1 class="text-4xl font-extrabold mt-4 md:text-5xl">
+          Επικοινωνήστε μαζί μας
+        </h1>
         <p class="mt-4 max-w-2xl mx-auto">
-          Είμαστε εδώ για να σας βοηθήσουμε με κάθε απορία ή ανάγκη σας.
-          Συμπληρώστε την παρακάτω φόρμα για να επικοινωνήσετε μαζί μας και θα
-          σας απαντήσουμε το συντομότερο δυνατόν.
+          Συμπληρώστε την φόρμα για να λύσετε τυχών απορίες και για να κλείσετε
+          κάποιο ταξίδι.
         </p>
       </div>
     </header>
 
     <!-- Contact Form Section -->
-    <section class="max-w-6xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-      <div class="max-w-md mx-auto">
-        <form
-          action="#"
-          class="p-5 mt-6 mb-0 space-y-4 rounded-lg shadow-lg sm:p-6 lg:p-8 border-gray-100 border"
-        >
-          <p class="text-lg font-semibold text-center text-gray-800">
-            Στείλτε μας ένα μήνυμα
-          </p>
+    <section class="max-w-4xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div>
+        <form action="#" class="mt-8 space-y-6">
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Όνομα</label
+              >
+              <div class="mt-1">
+                <input
+                  type="text"
+                  id="name"
+                  class="block w-full px-4 py-3 text-sm border border-gray-300 rounded-md focus:ring-stone-500 focus:border-stone-500"
+                  placeholder="Εισάγετε το όνομά σας"
+                  required
+                />
+              </div>
+            </div>
 
-          <div>
-            <label for="email" class="block text-sm font-semibold text-gray-800"
-              >Email</label
-            >
-            <div class="mt-2">
-              <input
-                type="email"
-                id="email"
-                class="w-full p-4 text-sm border border-gray-200 pr-12"
-                placeholder="Εισάγετε το email σας"
-                required
-              />
+            <div>
+              <label
+                for="surname"
+                class="block text-sm font-medium text-gray-700"
+                >Επώνυμο</label
+              >
+              <div class="mt-1">
+                <input
+                  type="text"
+                  id="surname"
+                  class="block w-full px-4 py-3 text-sm border border-gray-300 rounded-md focus:ring-stone-500 focus:border-stone-500"
+                  placeholder="Εισάγετε το επώνυμό σας"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <div class="mt-1">
+                <input
+                  type="email"
+                  id="email"
+                  class="block w-full px-4 py-3 text-sm border border-gray-300 rounded-md focus:ring-stone-500 focus:border-stone-500"
+                  placeholder="Εισάγετε το email σας"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label
+                for="subject"
+                class="block text-sm font-medium text-gray-700"
+                >Θέμα</label
+              >
+              <div class="mt-1">
+                <input
+                  type="text"
+                  id="subject"
+                  class="block w-full px-4 py-3 text-sm border border-gray-300 rounded-md focus:ring-stone-500 focus:border-stone-500"
+                  placeholder="Εισάγετε το θέμα του μηνύματος"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Μήνυμα</label
+              >
+              <div class="mt-1">
+                <textarea
+                  id="message"
+                  class="block w-full px-4 py-3 text-sm border border-gray-300 rounded-md focus:ring-stone-500 focus:border-stone-500"
+                  rows="6"
+                  placeholder="Γράψτε το μήνυμά σας εδώ"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label
+                for="attachment"
+                class="block text-sm font-medium text-gray-700"
+                >Επισύναψη αρχείου</label
+              >
+              <div class="mt-1">
+                <input
+                  type="file"
+                  id="attachment"
+                  class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-stone-600 file:text-white hover:file:bg-stone-700"
+                />
+              </div>
             </div>
           </div>
 
-          <div>
-            <label
-              for="subject"
-              class="block text-sm font-semibold text-gray-800"
-              >Θέμα</label
+          <div class="text-center">
+            <button
+              type="submit"
+              class="inline-flex justify-center px-6 py-3 text-lg font-semibold text-white bg-black rounded-md shadow-sm hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-stone-500"
             >
-            <div class="mt-2">
-              <input
-                type="text"
-                id="subject"
-                class="w-full p-4 text-sm border border-gray-200 pr-12"
-                placeholder="Εισάγετε το θέμα του μηνύματος"
-                required
-              />
-            </div>
+              Αποστολή
+            </button>
           </div>
-
-          <div>
-            <label
-              for="message"
-              class="block text-sm font-semibold text-gray-800"
-              >Μήνυμα</label
-            >
-            <div class="mt-2">
-              <textarea
-                id="message"
-                class="w-full p-4 text-sm border border-gray-200"
-                rows="6"
-                placeholder="Γράψτε το μήνυμά σας εδώ"
-                required
-              ></textarea>
-            </div>
-          </div>
-
-          <button
-            type="submit"
-            class="block w-full px-5 py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700"
-          >
-            Υποβολή
-          </button>
         </form>
       </div>
     </section>
